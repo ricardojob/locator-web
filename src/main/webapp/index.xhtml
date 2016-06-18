@@ -6,15 +6,13 @@
         <title>Facelet Title</title>
     </h:head>
     <h:body>
-        <h:outputText value="nome : #{controlador.nome}" /> <br/>
-        <h:outputText value="idade : #{controlador.idade}" /> <br/>
         <h:form id="formulador">
-            <h:inputText value="#{controladorCalculadora.a}" />
-            <h:inputText value="#{controladorCalculadora.b}" />
+            <h:inputText value="#{controlador.a}" />
+            <h:inputText value="#{controlador.b}" />
             <h:commandButton value="somar" 
-                             action="#{controladorCalculadora.somar()}" 
+                             action="#{controlador.somar()}" 
                              />
-            <h:outputFormat value="#{controladorCalculadora.resultado}" />
+            <h:outputFormat value=" Resposta: #{controlador.resultado}" /> 
         </h:form>
     </h:body>
 </html>

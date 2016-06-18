@@ -23,17 +23,13 @@ public class ServerContextProducers {
 
     @Inject
     private Event<ServerContext> loginEvent;
-    
-    
-    
-    @Dependent
+
     @Produces
-    @Named
     public ServerContext app() {
         ServerContext serverContext = new ServerContext(
                 new GlassFishContext(),
                 App.name("core"));
-        
+
         loginEvent.fire(serverContext);
         return serverContext;
     }
