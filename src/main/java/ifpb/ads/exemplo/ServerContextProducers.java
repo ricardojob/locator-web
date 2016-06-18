@@ -2,11 +2,9 @@ package ifpb.ads.exemplo;
 
 //import com.sun.xml.internal.ws.api.policy.PolicyResolver.ServerContext;
 import ifpb.locator.ServerContext;
-import ifpb.locator.context.DefaultContext;
 import ifpb.locator.ejb.GlassFishContext;
 import ifpb.locator.named.App;
 import javax.enterprise.context.ApplicationScoped;
-import javax.enterprise.context.Dependent;
 import javax.enterprise.event.Event;
 import javax.enterprise.inject.Produces;
 import javax.inject.Inject;

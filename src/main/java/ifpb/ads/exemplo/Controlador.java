@@ -1,8 +1,7 @@
 package ifpb.ads.exemplo;
 
-import ifpb.ads.exemplo.inject.Locator;
+import ifpb.locator.cdi.Locator;
 import ifpb.ads.shared.Calculadora;
-import ifpb.ads.shared.Contador;
 import ifpb.locator.ServerContext;
 import java.io.Serializable;
 import javax.enterprise.context.RequestScoped;
@@ -20,11 +19,10 @@ public class Controlador implements Serializable {
 
     @Locator("CalculadoraImpl")
     private Calculadora calculadora;
-     
 
-     @Inject
+    @Inject
     private ServerContext c;
-    
+
     private String resultado;
     private int a;
     private int b;
@@ -57,6 +55,5 @@ public class Controlador implements Serializable {
     public void setB(int b) {
         this.b = b;
     }
-     
 
 }

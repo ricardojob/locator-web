@@ -5,7 +5,7 @@ import java.io.Serializable;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Named;
 
-import ifpb.ads.exemplo.inject.Locator;
+import ifpb.locator.cdi.Locator;
 import ifpb.ads.shared.Contador;
 /**
  * @author Ricardo Job
